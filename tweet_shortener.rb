@@ -28,18 +28,11 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(bulk)
-  string = bulk.join(" ")
-  array = string.split
-  subs = dictionary.keys
-    array.each_with_index do |word, i|
-      subs.each do |sub|
-        if word == sub
-          array[i] = dictionary.values_at(sub)
-        end
-      end
-    end
- newst = array.join(" ")
- puts newst
+
+bulk.each do |tweet|
+  puts word_substituter(tweet)
+end
+
 end
 
 def selective_tweet_shortener
