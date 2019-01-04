@@ -23,16 +23,12 @@ def word_substituter(tweet)
   subs = dictionary.keys
   narray = []
     array.each do |word|
-if subs.any?(word) != true
-  narray<<word
-else
     subs.each do |sub|
       if word == sub
         newword = dictionary.values_at(sub)
         narray<<newword
     end
   end
-end
 end
 narray.join(" ")
 end
