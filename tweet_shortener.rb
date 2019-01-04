@@ -47,12 +47,12 @@ def shortened_tweet_truncator(tweet)
   size = selective_tweet_shortener(tweet).length
   if size > 139
     nt = selective_tweet_shortener(tweet)
-    nt.split
+    nnt = nt.split
 3.times do
-    nt.pop
+    nnt.pop
   end
-    nt<<"..."
-    puts nt.join(" ")
+    nnt<<"..."
+    puts nnt.join(" ")
   else
     puts selective_tweet_shortener(tweet)
 end
