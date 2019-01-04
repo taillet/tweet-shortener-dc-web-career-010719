@@ -28,7 +28,7 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(bulk)
-  array = bulk.join(" ")
+  string = bulk.join(" ")
   subs = dictionary.keys
     array.each_with_index do |word, i|
       subs.each do |sub|
