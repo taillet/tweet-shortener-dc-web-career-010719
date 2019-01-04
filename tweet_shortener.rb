@@ -48,7 +48,7 @@ def shortened_tweet_truncator(tweet)
   if size > 139
     nt = selective_tweet_shortener(tweet)
     nnt = nt[1..140]+"..."
-    return nnt.join(" ")
+    return nnt
   else
     return selective_tweet_shortener(tweet)
 end
