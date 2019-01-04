@@ -27,6 +27,8 @@ def word_substituter(tweet)
     if word == sub
       word = sub
     end
+  end
+end
 
 return array
 end
