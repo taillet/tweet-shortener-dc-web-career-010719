@@ -38,6 +38,8 @@ def bulk_tweet_shortener(bulk)
         end
       end
     end
+ newst = array.join(" ")
+ puts newst
 end
 
 def selective_tweet_shortener
