@@ -48,6 +48,7 @@ def shortened_tweet_truncator(tweet)
 3.times do 
     tweet.pop
 end
+end
 tweet<<"..."
 puts tweet
 
