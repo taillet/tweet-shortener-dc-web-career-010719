@@ -28,7 +28,7 @@ def word_substituter(tweet)
     if word == sub
       narray<<sub
     else
-      narray<word
+      narray<<word
     end
   end
 end
