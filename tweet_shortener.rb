@@ -27,11 +27,10 @@ def word_substituter(tweet)
       if word == sub
         word = sub
     end
-    narray<<word
   end
 end
 
-return narray.join(" ")
+return array.join(" ")
 end
 
 def bulk_tweet_shortener
