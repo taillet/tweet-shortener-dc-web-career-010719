@@ -30,8 +30,7 @@ end
 def bulk_tweet_shortener(bulk)
 
 bulk.each do |tweet|
-  lowercase = tweet.downcase
-  puts word_substituter(lowercase)
+  puts word_substituter(tweet)
 end
 
 end
