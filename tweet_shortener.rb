@@ -14,12 +14,17 @@ dictionary = {
   "at" => "@"
   "and" => "&"
  }
+
 end
 
 def word_substituter(tweet)
 
-  tweet.split
-  
+  array = tweet.split
+  subs = dictionary.keys
+
+  array.each do |word|
+    if word == dictionary.keys
+
 end
 
 def bulk_tweet_shortener
