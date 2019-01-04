@@ -45,7 +45,7 @@ end
 
 def shortened_tweet_truncator(tweet)
   if selective_tweet_shortener(tweet).length >139
-3.times do 
+3.times do
     tweet.pop
 end
 end
