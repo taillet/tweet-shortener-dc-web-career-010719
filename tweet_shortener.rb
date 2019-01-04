@@ -23,6 +23,9 @@ def word_substituter(tweet)
   subs = dictionary.keys
   narray = []
     array.each do |word|
+if sub.any?(word) != true
+  narray<<word
+end
     subs.each do |sub|
       if word == sub
         newword = dictionary.values_at(sub)
