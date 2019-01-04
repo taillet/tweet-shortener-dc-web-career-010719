@@ -29,6 +29,7 @@ end
 
 def bulk_tweet_shortener(bulk)
   string = bulk.join(" ")
+  array = string.split
   subs = dictionary.keys
     array.each_with_index do |word, i|
       subs.each do |sub|
