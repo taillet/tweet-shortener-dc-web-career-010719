@@ -23,7 +23,7 @@ def word_substituter(tweet)
   subs = dictionary.keys
   narray = []
     array.each do |word|
-if sub.any?(word) != true
+if subs.any?(word) != true
   narray<<word
 else
     subs.each do |sub|
