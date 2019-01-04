@@ -23,8 +23,12 @@ def word_substituter(tweet)
   subs = dictionary.keys
 
   array.each do |word|
-    if word == dictionary.keys
+    subs.each do |sub|
+    if word == sub
+      word = sub 
+    end
 
+return array
 end
 
 def bulk_tweet_shortener
