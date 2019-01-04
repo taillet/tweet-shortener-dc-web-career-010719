@@ -22,7 +22,7 @@ def word_substituter(tweet)
   array = tweet.split
   subs = dictionary.keys
     array.collect do |word|
-    subs.each do |sub|
+    subs.collect do |sub|
       if word == sub
         word = dictionary.values_at(sub)
     end
