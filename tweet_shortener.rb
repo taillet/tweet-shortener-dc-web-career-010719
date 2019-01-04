@@ -28,7 +28,7 @@ def word_substituter(tweet)
     end
   end
 end
-dictionary.keys
+narray.join(" ")
 end
 
 def bulk_tweet_shortener
