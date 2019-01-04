@@ -49,7 +49,7 @@ def shortened_tweet_truncator(tweet)
     nt = selective_tweet_shortener(tweet)
     nnt = nt.split
     diff = size -140
-diff.times do
+5.times do
     nnt.pop
   end
     nnt<<"..."
