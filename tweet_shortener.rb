@@ -25,7 +25,7 @@ def word_substituter(tweet)
     array.each do |word|
     subs.each do |sub|
       if word == sub
-        newword = dictionary(sub)
+        newword = dictionary.values_at(sub)
         narray<<newword
     end
   end
