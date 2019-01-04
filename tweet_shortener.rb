@@ -36,7 +36,7 @@ end
 end
 
 def selective_tweet_shortener(tweet)
-  if tweet.length<=139
+  if tweet.size<=139
     return tweet
   else
     word_substituter(tweet)
@@ -46,7 +46,7 @@ end
 def shortened_tweet_truncator(tweet)
   if selective_tweet_shortener(tweet).length >139
 3.times do
-    tweet.pop
+    tweet.split.pop
 end
 end
 tweet<<"..."
