@@ -39,8 +39,6 @@ def bulk_tweet_shortener(bulk)
       end
     end
  array.join(" ")
-
- puts bulk_tweet_shortener
 end
 
 def selective_tweet_shortener
