@@ -22,10 +22,8 @@ def word_substituter(tweet)
   array = tweet.split
   subs = dictionary.keys
   narray = []
-
-  array.each do |word|
+    array.each do |word|
     subs.each do |sub|
-
     end
   end
 end
