@@ -48,8 +48,8 @@ def shortened_tweet_truncator(tweet)
   if size > 139
     nt = selective_tweet_shortener(tweet)
     nnt = nt.split
-    A = size - 140
-A.times do
+    t = size - 140
+t.times do
     nnt.pop
   end
     nnt<<"..."
