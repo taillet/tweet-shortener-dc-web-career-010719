@@ -48,11 +48,10 @@ def shortened_tweet_truncator(tweet)
   if size > 139
 3.times do
     tweet.pop
-  else 
+  end
+    tweet<<"..."
+    puts tweet
+  else
     puts selective_tweet_shortener(tweet)
 end
-end
-tweet<<"..."
-puts tweet
-
 end
