@@ -25,12 +25,14 @@ def word_substituter(tweet)
   array.each do |word|
     subs.each do |sub|
     if word == sub
-      word = sub
+      narray<<sub
+    else 
+      narray<word
     end
   end
 end
 
-return array
+return narray.join(" ")
 end
 
 def bulk_tweet_shortener
