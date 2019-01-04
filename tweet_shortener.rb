@@ -12,13 +12,10 @@ dictionary = {
   "be" => "b",
   "you" => "u",
   "at" => "@",
-  "and" => "&"
- }
-
+  "and" => "&"}
 end
 
 def word_substituter(tweet)
-
   array = tweet.split
   subs = dictionary.keys
     array.each_with_index do |word, i|
