@@ -47,6 +47,7 @@ def shortened_tweet_truncator(tweet)
   size = selective_tweet_shortener(tweet).length
   if size > 139
     nt = selective_tweet_shortener(tweet)
+    nt.split
 3.times do
     nt.pop
   end
