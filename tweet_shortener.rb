@@ -52,8 +52,8 @@ def shortened_tweet_truncator(tweet)
     nnt.pop
   end
     nnt<<"..."
-    puts nnt.join(" ")
+    return nnt.join(" ")
   else
-    puts selective_tweet_shortener(tweet)
+    return selective_tweet_shortener(tweet)
 end
 end
