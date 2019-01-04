@@ -21,14 +21,13 @@ def word_substituter(tweet)
 
   array = tweet.split
   subs = dictionary.keys
-    array.each do |word|
+    array.collect do |word|
     subs.each do |sub|
       if word == sub
         word = dictionary.values_at(sub)
     end
   end
 end
-narray.join(" ")
 end
 
 def bulk_tweet_shortener
